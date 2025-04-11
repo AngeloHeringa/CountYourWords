@@ -4,13 +4,8 @@ namespace CountYourWords.Tests;
 
 public class FileReaderTests : IDisposable
 {
-    private readonly string _tempFilePath;
-
-    public FileReaderTests()
-    {
-        // Create a temp file to use in tests
-        _tempFilePath = Path.GetTempFileName();
-    }
+    // Create a temp file to use in tests
+    private readonly string _tempFilePath = Path.GetTempFileName();
 
     public void Dispose()
     {
@@ -47,6 +42,6 @@ public class FileReaderTests : IDisposable
         // Assert
         Assert.Null(result);
     }
-
-
+    
+    // TODO: Parent path mock test for non existent parent folders? 
 }

@@ -4,5 +4,10 @@
   &lt;ProjectFile&gt;3A783499-3C30-49A7-85D5-D5A61AE1EDBE/f:FileReaderTest.cs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4e9a432b_002D3d2e_002D413c_002Db59a_002D8e08a1a77d65/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from FileReaderTest.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;3A783499-3C30-49A7-85D5-D5A61AE1EDBE/f:FileReaderTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;3A783499-3C30-49A7-85D5-D5A61AE1EDBE/f:FileReaderTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::3A783499-3C30-49A7-85D5-D5A61AE1EDBE::net8.0::CountYourWords.Tests.WordCountMapperTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

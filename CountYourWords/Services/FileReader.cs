@@ -6,6 +6,10 @@ public class FileReader(string filePath) : IFileReader
 {
     public string? ReadAllText()
     {
-        return File.Exists(filePath) ? File.ReadAllText(filePath) : null;
+        string? rootDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
+        if (rootDirectory == null)
+            return null;
+        var fullPath = Path.Combine(rootDirectory, filePath);
+        return File.Exists(fullPath) ? File.ReadAllText(fullPath) : null;
     }
 }
