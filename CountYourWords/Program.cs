@@ -1,10 +1,12 @@
-﻿namespace CountYourWords
+﻿using CountYourWords.Services;
+
+namespace CountYourWords
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");        
+            //TODO: Implement Mapper class to map FileReader output to dictionary object   
         }
     }
 }
