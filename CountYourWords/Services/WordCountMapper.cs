@@ -14,11 +14,11 @@ public class WordCountMapper : IWordCountMapper
 
         // Filter out punctuation and number characters using regex
         var matches = Regex.Matches(input, @"\b[a-zA-Z]+\b");
-        
-        return matches
-            .Select(match=>match.Value.ToLowerInvariant()) // refactor to lowercase for comparison 
+
+        return Sorter<string>.SortWithComparator(matches
+                .Select(match => match.Value.ToLowerInvariant())) // refactor to lowercase for comparison 
             .GroupBy(word => word)
-            .OrderBy(group => group.Key) // Sort by key/word in alphabetical order
-            .ToDictionary(group => group.Key, group => group.Count()); // Convert Grouping to Dictionary with occurence count
+            .ToDictionary(group => group.Key,
+                group => group.Count()); // Convert Grouping to Dictionary with occurence count
     }
 }
