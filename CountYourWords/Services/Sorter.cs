@@ -1,6 +1,6 @@
 namespace CountYourWords.Services;
 
-public class Sorter<T>
+public abstract class Sorter<T>
 {
     public static List<T> SortWithComparator(IEnumerable<T> words)
     {

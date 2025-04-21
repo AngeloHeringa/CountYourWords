@@ -10,10 +10,7 @@ public static class ComparatorFactory
         {
             return (IComparator<T>)new StringComparator();
         }
-        else if (typeof(T) == typeof(int))
-        {
-            //return (IComparator<T>)new IntComparator(); // If you would implement this also
-        }
+        // else if (typeof(T) == typeof(int)) for example you can add more
 
         throw new NotSupportedException($"No comparator available for type {typeof(T)}");
     }

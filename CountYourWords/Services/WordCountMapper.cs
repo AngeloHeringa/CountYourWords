@@ -15,8 +15,8 @@ public class WordCountMapper : IWordCountMapper
         // Filter out punctuation and number characters using regex
         var matches = Regex.Matches(input, @"\b[a-zA-Z]+\b");
 
-        return Sorter<string>.SortWithComparator(matches
-                .Select(match => match.Value.ToLowerInvariant())) // refactor to lowercase for comparison 
+        return Sorter<string>.SortWithComparator(matches// Sort by alphabetical order
+            .Select(match => match.Value.ToLowerInvariant())) // Refactor to lowercase for comparison/grouping
             .GroupBy(word => word)
             .ToDictionary(group => group.Key,
                 group => group.Count()); // Convert Grouping to Dictionary with occurence count

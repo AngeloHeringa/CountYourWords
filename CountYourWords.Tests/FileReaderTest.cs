@@ -43,5 +43,16 @@ public class FileReaderTests : IDisposable
         Assert.Null(result);
     }
     
-    // TODO: Parent path mock test for non existent parent folders? 
+    [Fact]
+    public void ReadAllText_RootDirectoryIsNull_ReturnsNull()
+    {
+        // Arrange
+        var fileReader = new FileReader("some/file.txt");
+
+        // Act
+        string? result = fileReader.ReadAllText();
+
+        // Assert
+        Assert.Null(result);
+    }
 }
