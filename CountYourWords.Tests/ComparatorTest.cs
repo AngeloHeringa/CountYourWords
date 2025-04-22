@@ -1,7 +1,7 @@
 using CountYourWords.Services;
 namespace CountYourWords.Tests;
 
-public class ComparatorTests
+public class ComparatorTest
 {
     [Fact]
     public void ComparatorFactory_Throws_NotSupportedException()

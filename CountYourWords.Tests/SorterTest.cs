@@ -2,7 +2,7 @@ using CountYourWords.Services;
 
 namespace CountYourWords.Tests
 {
-    public class SorterTests
+    public class SorterTest
     {
         [Fact]
         public void SortWithComparator_ShouldSortStringsAlphabetically_CustomOrder()
