@@ -1,6 +1,8 @@
+using CountYourWords.Models;
+
 namespace CountYourWords.Interfaces;
 
 public interface IWordCountMapper
 {
-    Dictionary<string, int> WordCountMap(string input);
+    MapResult WordCountMap(string input);
 }
